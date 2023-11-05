@@ -1,0 +1,432 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --basicPadding : 6rem 0;
+}
+
+body{
+    font-family: "Merriweather", sans-serif;
+}
+
+h1,h2,h3,h5,h6, strong{
+    color: black;
+}
+
+p,article{
+    font-size: 1rem;
+    line-height: 2rem;
+    /* display: flex; */
+}
+
+span,label{
+    color: bisque;
+}
+
+
+li,p{
+    color:#102C57;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width : 1200px) {
+    .main-container{
+        width: 90%;
+    }
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: black;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a{
+    color: black;
+}
+
+.logo img{
+    width: 100px;
+    
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    color: black;
+}
+
+/* .nav:hover{
+    box-shadow: rgb(0, 0, blue);
+} */
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 7px;
+    transition: all  0.3s;
+    z-index: 99;
+}
+
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+#mainHero {
+    height: 730px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* padding: var(--basicPadding); */
+}
+
+.nama{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-kanan img{
+    width: 20rem;
+    /* display: flex; */
+}
+.hero-kanan{
+    display: flex;
+    justify-content: center;
+}
+
+/* .hero-kanan img{
+    display: flex;
+    justify-content: center;
+    width: 10px;
+} */
+
+#aboutMe{
+    background-color: #F8F0E5;
+    padding: var(--basicPadding); 
+    /* display: flex; */
+}
+
+/* .aboutMe article{
+    padding: 6rem 0;
+} */
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 3rem;
+}
+
+
+.aboutMe .pre-title{
+    /* margin-bottom: 3rem; */
+    margin: 0 auto;
+    /* align-items: center; */
+}
+
+.aboutMe article{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+
+#sertifikat{
+    padding: var(--basicPadding);
+}
+
+.sertifikat{
+    border-radius:0.7rem ;
+    overflow: hidden;
+}
+
+.sertifikat .pre-title{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.coverSertifikat{
+    height: 250px;
+}
+.coverSertifikat img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.infoSertifikat{
+    padding: 2rem 1.5rem;
+}
+
+.sertifikat h4{
+    font-weight: 450;
+    font-size: 1.05rem;
+}
+
+#pengalaman{
+    padding: var(--basicPadding);
+    background-color: #F8F0E5;
+}
+
+.pengalaman-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 3rem;
+
+    /* display: flex;
+    justify-content: space-between;
+    padding: 2rem 0; */
+}
+
+.pengalaman {
+    display: flex;
+    gap: 1rem;
+}
+
+.pengalaman .pre-title{
+    margin-bottom: 3rem;
+    /* margin-top: 0; */
+}
+
+.edu {
+    display: flex;
+    gap: 2em;
+}
+
+.edu .line {
+    padding: 0 0.7rem;
+    /* width: 2px; */
+}
+ 
+.edu .line div {
+    /* padding: 0.7rem; */
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.tahun{
+    margin-bottom: 3rem;
+}
+
+.pengalamanK ul{
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.listSkill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.pengalamanK img{
+    width: 30vh;
+    height: auto;
+}
+ 
+#kontak{
+    padding: var(--basicPadding);
+}
+
+.kontak-grid{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 3rem; */
+    /* justify-content: center; */
+    display: flex; 
+    justify-content: space-between;
+    padding: 2rem 0; 
+}
+
+.iconKontak{
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    pad: 4rem 0;
+    text-align: center;
+    background-color: #F8F0E5;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    p{
+        font-size: .9rem;
+        line-height: 1.7rem;
+    }
+    .grid-3{
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+
+    html{
+        /* display: flex; */
+        font-size: 62.5%;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-burger .line1 {
+        transform: rotate(-45deg) translate(-5px, 7px);
+      }
+    
+      .toggle-burger .line2 {
+        opacity: 0;
+      }
+    
+      .toggle-burger .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+    
+    nav{
+        margin-bottom: 3rem;
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        border-left: 1px solid;
+        z-index: 9;
+        transform: translateX(100%);
+        transform: 0.5s ease-in-out;
+        background-color: white;
+        font-size: 120%;
+        border: none;
+    }
+    
+    nav ul{
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navOn{
+        transform: translateX(0);
+    }
+
+    :root{
+        --basicPadding: 4rem 0;
+    }
+
+    .pre-title{
+        font-size: 0.8rem;
+    }
+
+    /* #aboutMe{
+        padding: 4rem 0;
+    } */
+
+    #mainHero{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .hero-kanan{
+        order: -1;
+    }
+    .hero-kanan img{
+        width: 60%;
+        left: 100px;
+    }
+
+    .hero-kiri {
+        text-align: center;
+        padding-bottom: 5rem;
+      }
+    
+    .hero-krii .pre-title{
+        margin: 0;
+    }
+
+    .nama{
+        font-size: 2.3rem;
+        margin-bottom: 0.5rem;
+    }  
+    
+
+    .grid-3{
+        grid-template-columns: 1fr;
+        /* height: fi; */
+    }
+
+    .pengalaman-grid{
+        gap: 1rem;
+    }
+
+    .pengalamanK img{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pre-title{
+        font-size: 0.7rem;
+    }
+    
+}

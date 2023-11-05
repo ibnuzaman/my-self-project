@@ -1,0 +1,5 @@
+Feature
+
+Menampilkan burger nav (dropdown) ketika layout kurang dari 825px dan menghilangkan navigasi utama yang dimasukkan
+ke dalam burger navigasi, cara menampilkan navigasi yang terdapat pada burger nav dengan meng click burger nav yang
+kemudian akan menampilkan navigasi utama.
